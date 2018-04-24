@@ -1,0 +1,17 @@
+
+
+Formulario HTML para pedidos POST:
+
+<form method="POST" action="<?=$config['public_url']?>/books">
+	<input type="text" name="name">
+	<button>
+		Enviar
+	</button>
+</form>
+
+
+Pedido POST via AJAX:
+
+$.post('/books', {name: 'hola'}, function (response) {
+  console.log(response);
+});
